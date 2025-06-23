@@ -1,3 +1,8 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +44,31 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.prose p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.prose ul > li,
+.prose ol > li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.prose ul {
+  padding-left: 2rem; /* indent the whole list */
+  list-style-position: outside; /* optional, ensures bullets are outside */
+}
+
+.prose ul > li {
+  padding-left: 0.25rem; /* optional, indent text after the bullet a bit */
 }
