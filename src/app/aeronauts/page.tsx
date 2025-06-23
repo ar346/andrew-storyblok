@@ -8,7 +8,7 @@ export default async function Home() {
 		</div>
 	);
 }
-export async function fetchData() {
+ async function fetchData() {
 	const storyblokApi = getStoryblokApi();
 	return await storyblokApi.get(`cdn/stories/aeronauts`, { version: 'draft' });
 }
