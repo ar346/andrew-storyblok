@@ -1,11 +1,7 @@
 import "./globals.css";
 import StoryblokProvider from "@/components/StoryblokProvider";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode;}) {
   return (
     <StoryblokProvider>
       <html lang="en">
