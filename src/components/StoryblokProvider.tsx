@@ -9,6 +9,5 @@ type Props = {
 
 export default function StoryblokProvider({ children }: Props) {
   getStoryblokApi();
-
   return children;
 }

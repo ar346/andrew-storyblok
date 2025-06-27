@@ -4,7 +4,7 @@ import { StoryblokStory } from '@storyblok/react/rsc';
 const envVersion = process.env.NEXT_PUBLIC_STORYBLOK_VERSION;
 const version: 'draft' | 'published' = envVersion === 'published' ? 'published' : 'draft';
 
-export default async function Home() {
+export default async function Aeronauts() {
 	const { data } = await fetchData();
 	return (
 		<div className="page">
